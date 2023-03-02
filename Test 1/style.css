@@ -1,0 +1,110 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.contain {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+#myHeader {
+    background-color: rgb(29, 92, 209);
+    color: white;
+}
+
+#myNav {
+    background-color: rgb(44, 44, 44);
+}
+
+#myNav ul {
+    padding: 5px;
+    margin: 0;
+    list-style: none;
+}
+
+#myNav li {
+    display: inline;
+    padding: 10px;
+}
+
+#myNav li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+#myNav li a:hover {
+    background-color: white;
+    color: rgb(44, 44, 44);
+    padding: 10px;
+}
+
+#myDiv {
+    background-image: url('pic.jpg');
+    color: white;
+    height: 200px;
+    text-align: center;
+}
+
+#myDiv p {
+    padding-top: 50px;
+    font-size: 18px;
+    line-height: 1.6em;
+    letter-spacing: .1em;
+    word-spacing: .1em;
+}
+
+#firstSection {
+    float: left;
+    width: 30%;
+    padding: 0 20px 0 0;
+    box-sizing: border-box;
+}
+
+#firstSection p {
+    font-size: 17px;
+    letter-spacing: .1em;
+    word-spacing: .1em;
+}
+
+#secendSection {
+    float: right;
+    width: 70%;
+    padding: 0 0 0 20px;
+    box-sizing: border-box;
+    border-left: 2px solid #333 ;
+}
+
+#secendSection p {
+    font-size: 17px;
+    letter-spacing: .1em;
+    word-spacing: .1em;
+}
+
+#myFooter {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 100px;
+}
+
+#fix {
+    background-color: tomato;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    left: 20px;
+    padding: 5px 10px;
+    border-radius: 50%;
+}
+
+@media (max-width: 500px){
+    #firstSection, #secendSection{
+        width: 100%;
+        float: none;
+        border: none;
+    }
+}
